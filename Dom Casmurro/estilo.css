@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+:root{
+    --larguraC: 100%;
+    --alturaC: 20%;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+header{
+    background-color: rgb(6, 112, 6);
+    width: var(--larguraC);
+    height: var(--alturaC);
+}
+
+nav{
+    justify-content: flex-end;
+    width: var(--larguraC);
+    height:calc(var(--alturaC)*0.5);
+    display: flex;
+    flex-direction: row;
+    background-color: palevioletred;
+    align-items: center;
+}
+nav .menu-desktop{
+    display: none;
+    letter-spacing: 1px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin-left: 32px;
+    color: rgb(0, 0, 0);
+    margin-right: 12px;
+}
+
+.nav-list2{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list2 li{
+    margin-left: 32px;
+    color: rgb(0, 0, 0);
+    margin-right: 12px;
+}
+
+nav .menuIcon{
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    margin: 8px;
+}
+
+nav .menu-mobile{
+    background-color:indianred;
+    width: var(--larguraC);
+    position: absolute;
+    top:calc(var(--alturaC)*0.5 + var(--alturaC));
+    left: -100%;
+    height: calc(100vh - var(--alturaC));
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    transition: 0.1s;
+}
+
+.menuIcon:hover{
+    cursor: pointer;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    margin-left: 32px;
+    color: white;
+    margin-right: 12px;
+}
+
+.nav-list2{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-list2 li{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+}
+
+.nav-list a:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.nav-list2 a:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.imagem:hover{
+    cursor: pointer;
+}
+.imagem{
+    margin-left: 10px;
+    /* margin-bottom: 10px; */
+    align-self: center;
+
+}
+@media screen and (min-width:768px) {
+    nav .menu-mobile{display: none;}
+    nav .menuIcon{display:none;}
+    nav .menu-desktop {display:flex;}
+}
