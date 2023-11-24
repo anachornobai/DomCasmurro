@@ -5,7 +5,7 @@
 }
 :root{
     --larguraC: 100%;
-    --alturaC: 20%;
+    --alturaC: 38%;
 }
 .container {
     width: 100vw;
@@ -16,18 +16,23 @@
 }
 
 header{
-    background-color: rgb(6, 112, 6);
+    background-image: url('Capitu.jpg');
     width: var(--larguraC);
     height: var(--alturaC);
+    background-size: cover;
 }
 
 nav{
     justify-content: flex-end;
     width: var(--larguraC);
-    height:calc(var(--alturaC)*0.5);
+    height:calc(var(--alturaC)*0.20);
     display: flex;
     flex-direction: row;
-    background-color: palevioletred;
+    /* background-color: rgb(176, 154, 54); */
+    /* background-color: darkred;
+    background-color: rgb(1, 79, 1); */
+    background-color: rgb(148, 153, 217);
+    /* background-color: rgb(123, 45, 67); */
     align-items: center;
 }
 nav .menu-desktop{
@@ -37,6 +42,12 @@ nav .menu-desktop{
     font-size: 18px;
     justify-content: space-between;
 }
+.inicial a:hover{
+    color: rgb(255, 230, 0);
+}
+#dom{
+    margin-right: 590px; 
+} 
 
 .nav-list{
     list-style: none;
@@ -106,23 +117,19 @@ nav .menu-mobile{
     margin-top: 45px;
 }
 
+
+
 .nav-list a:hover{
-    color: blueviolet;
+    color: rgb(22, 12, 112);
     cursor: pointer;
 }
 .nav-list2 a:hover{
     color: blueviolet;
     cursor: pointer;
 }
-.imagem:hover{
-    cursor: pointer;
-}
-.imagem{
-    margin-left: 10px;
-    /* margin-bottom: 10px; */
-    align-self: center;
 
-}
+
+
 @media screen and (min-width:768px) {
     nav .menu-mobile{display: none;}
     nav .menuIcon{display:none;}
