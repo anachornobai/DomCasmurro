@@ -7,12 +7,16 @@
     --larguraC: 100%;
     --alturaC: 38%;
 }
+/* body{
+    overflow: hidden;
+} */
 .container {
     width: 100vw;
     height: 100vh;
     display: inline-block;
     flex-direction: row;
     flex-wrap:wrap;
+    
 }
 
 header{
@@ -25,12 +29,12 @@ header{
 nav{
     justify-content: flex-end;
     width: var(--larguraC);
-    height:calc(var(--alturaC)*0.20);
+    height:50px;
     display: flex;
     flex-direction: row;
     /* background-color: rgb(176, 154, 54); */
     /* background-color: darkred;
-    background-color: rgb(1, 79, 1); */
+    /*background-color: rgb(1, 79, 1); */
     background-color: rgb(148, 153, 217);
     /* background-color: rgb(123, 45, 67); */
     align-items: center;
@@ -40,7 +44,7 @@ nav .menu-desktop{
     letter-spacing: 1px;
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .inicial a:hover{
     color: rgb(255, 230, 0);
@@ -81,7 +85,8 @@ nav .menu-mobile{
     background-color:indianred;
     width: var(--larguraC);
     position: absolute;
-    top:calc(var(--alturaC)*0.5 + var(--alturaC));
+    /* top:calc(var(--alturaC)*0.5+ var(--alturaC) ); */
+    top:calc(38% + 50px);
     left: -100%;
     height: calc(100vh - var(--alturaC));
     font-family: 'Inconsolata', monospace;
@@ -117,8 +122,6 @@ nav .menu-mobile{
     margin-top: 45px;
 }
 
-
-
 .nav-list a:hover{
     color: rgb(22, 12, 112);
     cursor: pointer;
@@ -128,8 +131,21 @@ nav .menu-mobile{
     cursor: pointer;
 }
 
+footer{
+    background-color: rgb(238, 157, 202);
+    /* width: var(--larguraC);
+    height: calc(var(--alturaC)); */
+    text-align: center;
+    padding: 10px;
+    display: block;
+   
+}
 
+main{
+    height: calc(100% - var(--alturaC));
+    width:var(--larguraC);
 
+}
 @media screen and (min-width:768px) {
     nav .menu-mobile{display: none;}
     nav .menuIcon{display:none;}

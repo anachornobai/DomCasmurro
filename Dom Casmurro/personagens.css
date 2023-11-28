@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 90vh;
+}
+
+img{
+    width:250px;
+    height: 250px;
+}
+.texto{
+    background-color: rgb(92, 16, 16);
+    width: 70vw;
+    height: 90vh;
+    margin-left: 50px;
+}
