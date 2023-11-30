@@ -11,6 +11,8 @@
     overflow: hidden;
 } */
 .container {
+    position: relative;
+    min-height: 100vh;
     width: 100vw;
     height: 100vh;
     display: inline-block;
@@ -20,7 +22,7 @@
 }
 
 header{
-    background-image: url('Capitu.jpg');
+    background-image: url('Imagens/Capitu.jpg');
     width: var(--larguraC);
     height: var(--alturaC);
     background-size: cover;
@@ -40,6 +42,7 @@ nav{
     align-items: center;
 }
 nav .menu-desktop{
+    padding-bottom: 2.5rem;
     display: none;
     letter-spacing: 1px;
     font-family: 'Inconsolata', monospace;
@@ -49,6 +52,7 @@ nav .menu-desktop{
 .inicial a:hover{
     color: rgb(255, 230, 0);
 }
+/* tem que arrumar essa gambiarra aqui */
 #dom{
     margin-right: 590px; 
 } 
@@ -123,15 +127,19 @@ nav .menu-mobile{
 }
 
 .nav-list a:hover{
-    color: rgb(22, 12, 112);
+    color: rgb(63, 6, 24);
     cursor: pointer;
 }
 .nav-list2 a:hover{
-    color: blueviolet;
+    color: rgb(63, 6, 24);
     cursor: pointer;
 }
 
-footer{
+.footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 2.5rem;
     background-color: rgb(238, 157, 202);
     /* width: var(--larguraC);
     height: calc(var(--alturaC)); */

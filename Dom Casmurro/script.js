@@ -22,6 +22,15 @@ document.getElementById("livro").addEventListener("click", function() {
         .catch(error => console.error('Erro ao carregar o conteúdo:', error));
 });
 
+// document.getElementById("Livro").addEventListener("click", function() {
+//     fetch("livroAutor.html")
+//         .then(response => response.text())
+//         .then(data => {
+//             document.querySelector("main").innerHTML = data;
+//         })
+//         .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+// });
+
 document.getElementById("Capitu").addEventListener("click", function() {
     fetch("Capitu.html")
         .then(response => response.text())
