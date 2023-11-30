@@ -13,6 +13,14 @@ function handleMenu(){
     }
 
 }
+document.getElementById("livro").addEventListener("click", function() {
+    fetch("livroAutor.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+});
 
 document.getElementById("Capitu").addEventListener("click", function() {
     fetch("Capitu.html")
@@ -23,3 +31,34 @@ document.getElementById("Capitu").addEventListener("click", function() {
         .catch(error => console.error('Erro ao carregar o conteúdo:', error));
 });
 
+document.getElementById("Escobar").addEventListener("click", function() {
+    fetch("Escobar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+});
+
+document.getElementById("Bentinho").addEventListener("click", function() {
+    fetch("Bentinho.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+});
+
+document.getElementById("Cosme").addEventListener("click", function() {
+    fetch("Cosme.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+});
+
+
+document.getElementById("inicio").addEventListener("click", function() {
+    window.location.href = "principal.html";
+});
