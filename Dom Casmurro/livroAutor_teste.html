@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="Autor_Livro.css">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Autor_Livro.css">
-    <title>Machado de Assis</title>
+    <title>Dom Casmurro</title>
 </head>
 
 <body>
-    <h1>Machado de Assis</h1>
-    <div class="box">
+    <div class="container">
+        <header>
+            
+        </header>
+        <nav>
+            <div class="menu-desktop">
+                <h2 id="dom"><a>Dom Casmurro</a></h2>
+                <ul class="nav-list">
+                    
+                    <li><a id="livro">Livro e Autor</a></li>
+                    <li><a id="Capitu">Capitu</a></li>
+                    <li><a id="Escobar">Escobar</a></li>
+                    <li><a id="Cosme">Cosme</a></li>
+                    <li><a id="Bentinho">Bentinho</a></li>
+                    <li><a id="inicial">UTFPR</a></li>
+                </ul>
+            </div>
+            <div onclick="handleMenu()" class="menuIcon"> <img id="barra" src="menu.svg" width="35px" height="45px">
+            </div>
+            <div class="menu-mobile">
+                <ul class="nav-list2">
+                    <li><a id="livro2">Livro e Autor</a></li>
+                    <li><a id="Capitu2">Capitu</a></li>
+                    <li><a id="Escobar">Escobar</a></li>
+                    <li><a id="Cosme">Cosme</a></li>
+                    <li><a id="Bentinho">Bentinho</a></li>
+                    <li><a id="inicio">Página inicial</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <h1>Machado de Assis</h1>
+    <div class="container">
         <div class="main">
             <div class="foto">
                 <img src="Imagens/Imagem do WhatsApp de 2023-11-30 à(s) 14.57.30_9bdf50be.jpg">
@@ -50,7 +81,7 @@
         </div>
     </div>
 
-    <div class="conte">
+    <div class="conteiner">
         <div class="main">
             <div class="foto">
                 <img src="Imagens/Imagem do WhatsApp de 2023-11-30 à(s) 15.00.11_35802df0.jpg">
@@ -99,6 +130,12 @@
             </p>
         </div>
     </div>
+        </main>
+        <footer id="footer" class="footer">
+            <p>rodapé</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

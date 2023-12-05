@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     
 }
 :root{
@@ -11,26 +12,28 @@
     overflow: hidden;
 } */
 .container {
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
+   
+    /* min-height: 100vh; */
+    width: 100%;
     height: 100vh;
-    display: inline-block;
+    display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+    align-items: flex-start;
+    
     
 }
 
 header{
     background-image: url('Imagens/Capitu.jpg');
-    width: var(--larguraC);
+    width: 100%;
     height: var(--alturaC);
     background-size: cover;
 }
 
 nav{
     justify-content: flex-end;
-    width: var(--larguraC);
+    width: 100%;
     height:50px;
     display: flex;
     flex-direction: row;
@@ -42,20 +45,18 @@ nav{
     align-items: center;
 }
 nav .menu-desktop{
-    padding-bottom: 2.5rem;
+    width: 100%;
     display: none;
     letter-spacing: 1px;
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .inicial a:hover{
     color: rgb(255, 230, 0);
 }
-/* tem que arrumar essa gambiarra aqui */
-#dom{
-    margin-right: 590px; 
-} 
+
 
 .nav-list{
     list-style: none;
@@ -86,16 +87,19 @@ nav .menuIcon{
 }
 
 nav .menu-mobile{
+    
     background-color:indianred;
-    width: var(--larguraC);
+    width: 100%;
     position: absolute;
     /* top:calc(var(--alturaC)*0.5+ var(--alturaC) ); */
-    top:calc(38% + 50px);
+    top: calc(var(--alturaC) + 50px);
     left: -100%;
-    height: calc(100vh - var(--alturaC));
+    /* height: calc(100% - var(--alturaC)); */
+    height: 100%;
     font-family: 'Inconsolata', monospace;
     display: block;
     transition: 0.1s;
+    
 }
 
 .menuIcon:hover{
@@ -136,7 +140,7 @@ nav .menu-mobile{
 }
 
 .footer{
-    position:absolute;
+    
     bottom:0;
     width: 100%;
     height: 2.5rem;
@@ -150,8 +154,9 @@ nav .menu-mobile{
 }
 
 main{
-    height: calc(100% - var(--alturaC));
-    width:var(--larguraC);
+    min-height: calc(100% - var(--alturaC));
+    width:100%;
+    padding: 30px;
     /* background-color: rgb(255, 247, 238); */
 
 }
@@ -159,4 +164,5 @@ main{
     nav .menu-mobile{display: none;}
     nav .menuIcon{display:none;}
     nav .menu-desktop {display:flex;}
+    
 }
