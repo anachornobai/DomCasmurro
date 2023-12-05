@@ -113,6 +113,7 @@ nav .menu-mobile{
     margin-left: 32px;
     color: white;
     margin-right: 12px;
+    
 }
 
 .nav-list2{
@@ -133,10 +134,14 @@ nav .menu-mobile{
 .nav-list a:hover{
     color: rgb(63, 6, 24);
     cursor: pointer;
+    transform: scale(5.20); /* Aumenta ligeiramente o tamanho no hover */
+    opacity: 0.8; /* Reduz a opacidade no hover */
 }
 .nav-list2 a:hover{
     color: rgb(63, 6, 24);
     cursor: pointer;
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
+    opacity: 0.8; /* Reduz a opacidade no hover */
 }
 
 .footer{
@@ -164,5 +169,5 @@ main{
     nav .menu-mobile{display: none;}
     nav .menuIcon{display:none;}
     nav .menu-desktop {display:flex;}
-    
+
 }
