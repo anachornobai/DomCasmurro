@@ -99,6 +99,19 @@ function carregaConteudoUTF() {
 document.getElementById("UTF").addEventListener("click", carregaConteudoUTF);
 document.getElementById("UTF_Mini").addEventListener("click", carregaConteudoUTF);
 
+function carregaConteudoDisciplinas() {
+    fetch("disciplinas.html")
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("main").innerHTML = data;
+            fechaMenuMobile()
+        })
+        .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+}
+
+document.getElementById("Disciplinas").addEventListener("click", carregaConteudoDisciplinas);
+document.getElementById("Disciplinas_Mini").addEventListener("click", carregaConteudoDisciplinas);
+
 
 
 
