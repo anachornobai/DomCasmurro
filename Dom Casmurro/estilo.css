@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,12 +9,13 @@
 :root{
     --larguraC: 100%;
     --alturaC: 38%;
+    --corNav:white;
+    --corHF:rgb(123, 45, 67);
 }
 /* body{
     overflow: hidden;
 } */
 .container {
-   
     /* min-height: 100vh; */
     width: 100%;
     height: 100vh;
@@ -20,8 +23,6 @@
     flex-direction: row;
     flex-wrap:wrap;
     align-items: flex-start;
-    
-    
 }
 
 header{
@@ -37,7 +38,7 @@ nav{
     height:50px;
     display: flex;
     flex-direction: row;
-    background-color: rgb(123, 45, 67);
+    background-color: var(--corHF);
     align-items: center;
     /* background-color: rgb(176, 154, 54); */
     /* background-color: darkred;
@@ -53,10 +54,6 @@ nav .menu-desktop{
     justify-content: space-between;
     padding: 0 20px;
 }
-.inicial a:hover{
-    color: rgb(255, 230, 0);
-}
-
 
 .nav-list{
     list-style: none;
@@ -87,7 +84,6 @@ nav .menuIcon{
 }
 
 nav .menu-mobile{
-    
     background-color:indianred;
     width: 100%;
     position: absolute;
@@ -99,9 +95,11 @@ nav .menu-mobile{
     font-family: 'Inconsolata', monospace;
     display: block;
     transition: 0.1s;
-    
 }
-
+.menu-desktop h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 29px;
+}
 .menuIcon:hover{
     cursor: pointer;
 }
@@ -111,11 +109,10 @@ nav .menu-mobile{
 }
 .nav-list li{
     margin-left: 32px;
-    color: white;
+    color:var(--corNav);
     margin-right: 12px;
     
 }
-
 .nav-list2{
     list-style: none;
     display: flex;
@@ -125,7 +122,7 @@ nav .menu-mobile{
    
 }
 .nav-list2 li{
-    color: white;
+    color: var(--corNav);
     font-size: 30px;
     margin-bottom: 25px;
     margin-top: 45px;
@@ -148,7 +145,8 @@ nav .menu-mobile{
     bottom:0;
     width: 100%;
     height: 2.5rem;
-    background-color: rgb(123, 45, 67);
+    background-color:var(--corHF);
+    color:rgb(240, 231, 219);
     text-align: center;
     padding: 10px;
     display: block;
