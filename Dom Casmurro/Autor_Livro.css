@@ -6,6 +6,10 @@
     --corTexto:rgb(218, 218, 181);
 }
 
+body{
+    background-color: rgb(209, 199, 186);
+}
+
 .box {
     display: flex;
     align-items: flex-start;
@@ -84,7 +88,7 @@ p {
 }
 
 footer {
-    background-color: rgb(157, 238, 211);
+    /* background-color: rgb(157, 238, 211); */
     /* width: var(--larguraC);
     height: calc(var(--alturaC)); */
     text-align: center;
@@ -95,7 +99,7 @@ footer {
 hr {
     border: 0;
     height: 5px;
-    background-image: linear-gradient(to right, rgb(67, 30, 99), rgb(208, 137, 255));
+    background-image: linear-gradient(to right, rgb(77, 56, 32), rgb(180, 149, 102));
     /* Gradiente colorido */
     margin: 20px 0;
 }

@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body{
+   background-color: rgb(241, 224, 177);
 }
 
 .utf-box {
@@ -20,45 +29,55 @@
 }
 
 .main {
-    background-color: #f7ea5ac4;
+    background-color: #dacc90c4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Adicionado para centralizar os elementos internos */
     width: 75vw;
-    /* height: 90vh; */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
+    padding: 20px; /* Ajuste o valor do padding conforme necessário */
 }
+
 .main2 {
-    background-color: #b6c474;
+    background-color: #cbcebe;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Adicionado para centralizar os elementos internos */
     width: 75vw;
-    /* height: 90vh; */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Ajuste o valor do padding conforme necessário */
+}
+
+.main2 p{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main p{
+    width: 75%;
+    font-size: large;
+    margin-bottom: 15px;
+    font-family: 'Space Grotesk', sans-serif;
 
 }
+
 
 .foto {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 250px;
     aspect-ratio: 8 / 12;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 20px;
     /*pra não cortar a borda arredondada*/
-    padding-top: 10px;
     
 }
 
 .foto img {
     width: 100%;
-    height: 45%;
+    height: 100%;
     object-fit: cover;
     aspect-ratio: 6/ 10;
     /* border-radius: 10%; */
@@ -84,9 +103,9 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-p {
+/* p {
     margin: 15px;
-}
+} */
 
 .footer {
     background-color: #7caa96;
@@ -103,6 +122,10 @@ hr {
     background-image: linear-gradient(to right, rgb(99, 8, 8), rgb(255, 137, 210));
     /* Gradiente colorido */
     margin: 20px 0;
+}
+
+h1{
+    font-family: 'Abril Fatface', serif;
 }
 
 /* Adicionando um elemento de estilo ao centro da linha */

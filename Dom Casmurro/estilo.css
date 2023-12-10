@@ -1,41 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+
 }
-:root{
+
+
+:root {
     --larguraC: 100%;
     --alturaC: 38%;
-    --corNav:white;
-    --corHF:rgb(123, 45, 67);
+    --corNav: white;
+    --corHF: rgb(123, 45, 67);
 }
-/* body{
-    overflow: hidden;
-} */
+
 .container {
     /* min-height: 100vh; */
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
-header{
+header {
     background-image: url('Imagens/Capitu.jpg');
     width: 100%;
     height: var(--alturaC);
     background-size: cover;
 }
 
-nav{
+nav {
     justify-content: flex-end;
     width: 100%;
-    height:50px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     background-color: var(--corHF);
@@ -45,7 +47,8 @@ nav{
     /*background-color: rgb(1, 79, 1); */
     /* background-color: rgb(137, 135, 114); */
 }
-nav .menu-desktop{
+
+nav .menu-desktop {
     width: 100%;
     display: none;
     letter-spacing: 1px;
@@ -55,36 +58,36 @@ nav .menu-desktop{
     padding: 0 20px;
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
 }
 
-.nav-list li{
+.nav-list li {
     margin-left: 32px;
     color: rgb(0, 0, 0);
     margin-right: 12px;
 }
 
-.nav-list2{
+.nav-list2 {
     list-style: none;
     display: flex;
 }
 
-.nav-list2 li{
+.nav-list2 li {
     margin-left: 32px;
     color: rgb(0, 0, 0);
     margin-right: 12px;
 }
 
-nav .menuIcon{
+nav .menuIcon {
     font-family: 'Inconsolata', monospace;
     display: block;
     margin: 8px;
 }
 
-nav .menu-mobile{
-    background-color:indianred;
+nav .menu-mobile {
+    background-color: indianred;
     width: 100%;
     position: absolute;
     /* top:calc(var(--alturaC)*0.5+ var(--alturaC) ); */
@@ -96,72 +99,114 @@ nav .menu-mobile{
     display: block;
     transition: 0.1s;
 }
-.menu-desktop h2{
+
+.menu-desktop h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 29px;
 }
-.menuIcon:hover{
+
+.menuIcon:hover {
     cursor: pointer;
 }
-.nav-list{
+
+.nav-list {
     list-style: none;
     display: flex;
 }
-.nav-list li{
+
+.nav-list li {
     margin-left: 32px;
-    color:var(--corNav);
+    color: var(--corNav);
     margin-right: 12px;
-    
+
 }
-.nav-list2{
+
+.nav-list2 {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 }
-.nav-list2 li{
+
+.nav-list2 li {
     color: var(--corNav);
     font-size: 30px;
     margin-bottom: 25px;
     margin-top: 45px;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     color: rgb(63, 6, 24);
     cursor: pointer;
-    transform: scale(5.20); /* Aumenta ligeiramente o tamanho no hover */
-    opacity: 0.8; /* Reduz a opacidade no hover */
-}
-.nav-list2 a:hover{
-    color: rgb(63, 6, 24);
-    cursor: pointer;
-    transform: scale(1.1); /* Aumenta ligeiramente o tamanho no hover */
-    opacity: 0.8; /* Reduz a opacidade no hover */
+    transform: scale(5.20);
+    /* Aumenta ligeiramente o tamanho no hover */
+    opacity: 0.8;
+    /* Reduz a opacidade no hover */
 }
 
-.footer{
-    bottom:0;
+.nav-list2 a:hover {
+    color: rgb(63, 6, 24);
+    cursor: pointer;
+    transform: scale(1.1);
+    /* Aumenta ligeiramente o tamanho no hover */
+    opacity: 0.8;
+    /* Reduz a opacidade no hover */
+}
+
+.footer {
+    bottom: 0;
     width: 100%;
     height: 2.5rem;
-    background-color:var(--corHF);
-    color:rgb(240, 231, 219);
+    background-color: var(--corHF);
+    color: rgb(240, 231, 219);
     text-align: center;
     padding: 10px;
     display: block;
 }
 
-main{
+main {
     min-height: calc(100% - var(--alturaC));
-    width:100%;
+    width: 100%;
     padding: 30px;
     /* background-color: rgb(255, 247, 238); */
 
 }
+
+.inicial {
+    background-color: rgb(167, 153, 151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Adicionado para centralizar horizontalmente */
+    width: 95vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+
+.inicial p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* max-width: 500px; */
+}
+
 @media screen and (min-width:768px) {
-    nav .menu-mobile{display: none;}
-    nav .menuIcon{display:none;}
-    nav .menu-desktop {display:flex;}
+    nav .menu-mobile {
+        display: none;
+    }
+
+    nav .menuIcon {
+        display: none;
+    }
+
+    nav .menu-desktop {
+        display: flex;
+    }
 
 }
