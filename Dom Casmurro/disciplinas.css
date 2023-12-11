@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -18,39 +21,23 @@
     justify-content: center;
     background-size: cover;
 }
-/*  */
+
+h1 {
+    font-family: 'Abril Fatface', serif;
+}
 
 .main {
-    background-color: rgb(99, 152, 221);
+    background-color: rgb(130, 139, 170);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 50vw;
-    /* height: 90vh; */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
 }
-/* .main2 {
-    background-color: rgb(99, 152, 221);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-} */
 
 .foto {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    /*pra não cortar a borda arredondada*/
-    padding-top: 10px;
-    
+    display: flex;
+    align-items: center;
 }
 
 .foto img {
@@ -58,29 +45,39 @@
     height: 35%;
     object-fit: cover;
     margin-left: 15px;
-    /* aspect-ratio: 6/ 10; */
     border-radius: 10%;
 }
+
+.foto p {
+    color: rgb(190, 220, 243);
+    background-color: rgb(0, 22, 22);
+    margin-left: 15px;
+    margin-right: 15px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    word-wrap: break-word;
+    overflow: hidden; /* Oculta o conteúdo que excede a área da div */
+}
+
 
 .texto img {
     width: 50%;
     height: 35%;
     object-fit: cover;
     margin-left: 15px;
-    /* aspect-ratio: 6/ 10; */
     border-radius: 10%;
 }
 
 
 .texto {
-    background-color: rgb(99, 152, 221);
+    background-color:rgb(130, 165, 170);;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     width: 50vw;
-    /* height: 90vh; */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
 }
 
 
@@ -92,24 +89,41 @@ footer {
     padding: 10px;
     display: block;
 }
+ 
+
+ #icon {
+    width: 7%; 
+    height: 5%; 
+    margin-right: 10px;
+    margin-left: 5px;
+    align-self: self-end;
+}
+
+#diciplina{
+    margin: 10px;
+    color: rgb(2, 5, 37);
+    
+}
 
 hr {
     border: 0;
-    width: 5px; /* Alterado de height para width para representar a largura da linha */
-    background-image: linear-gradient(to bottom, rgb(99, 8, 8), rgb(255, 137, 210));
-    /* Gradiente colorido na direção vertical */
-    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(126, 55, 55);
+   
 }
 
-.linha{
+.linha {
     width: 5px;
     height: 100vh;
     border: 0;
-    width: 5px; /* Alterado de height para width para representar a largura da linha */
+    width: 5px;
+    /* Alterado de height para width para representar a largura da linha */
     background-image: linear-gradient(to bottom, rgb(99, 8, 8), rgb(255, 137, 210));
     /* Gradiente colorido na direção vertical */
-    margin: 20px ;
-    border-radius: 5px; /* Valor de border-radius para criar uma ondulação */
+    margin: 20px;
+    border-radius: 5px;
+    /* Valor de border-radius para criar uma ondulação */
 }
 
 /* Adicionando um elemento de estilo ao centro da linha */
@@ -119,12 +133,14 @@ hr::after {
     margin: 0 10px;
     /* Espaçamento ao redor do emoji */
 }
+
 /* .foto img:hover{
     transform: scale(1.1);
 } */
 
-p{
+p {
     margin-left: 10px;
+    
 }
 
 @media screen and (min-width:768px) {

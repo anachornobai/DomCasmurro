@@ -9,7 +9,6 @@
 
 }
 
-
 :root {
     --larguraC: 100%;
     --alturaC: 38%;
@@ -175,7 +174,10 @@ main {
 }
 
 .inicial {
-    background-color: rgb(167, 153, 151);
+    /* background-color: rgb(167, 153, 151); */
+    background-color: rgb(119, 34, 51);
+    color:rgb(255, 252, 245);
+    /* mudei a cor só pra ver como ficava */
     display: flex;
     align-items: center;
     justify-content: center;

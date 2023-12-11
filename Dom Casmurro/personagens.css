@@ -67,7 +67,7 @@ h1, h2{
     font-family: 'Parisienne', cursive;
 }
 
-.bentinho p {
+.format p {
     font-size: large;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -75,6 +75,9 @@ h1, h2{
     margin-right: auto;
     max-width: 500px;
 }
+
+
+
 .final p{
     text-align: right;
     font-size: larger;
