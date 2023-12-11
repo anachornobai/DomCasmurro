@@ -87,6 +87,11 @@ p {
     font-size: 18px;
 }
 
+
+footer p{
+    text-align: center;
+}
+
 footer {
     /* background-color: rgb(157, 238, 211); */
     /* width: var(--larguraC);

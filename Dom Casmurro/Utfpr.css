@@ -83,29 +83,12 @@ body{
     /* border-radius: 10%; */
 }
 
-
-.texto {
-    background-color: rgb(131, 202, 198);
-    width: 50vw;
-    /*height: 90vh;*/
-    margin-left: 50px;
-    border-radius: 10px;
-    /*aspect-ratio: 6 / 12;*/
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.video-container iframe {
+    aspect-ratio: 6/ 10;
+    width: 40vw;
+    height: 40vh;
 }
 
-.livro {
-    background-color: rgb(131, 202, 198);
-    width: 70vw;
-    /* height: 90vh; */
-    margin-left: 50px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* p {
-    margin: 15px;
-} */
 
 .footer {
     background-color: #7caa96;
@@ -119,7 +102,7 @@ body{
 hr {
     border: 0;
     height: 5px;
-    background-image: linear-gradient(to right, rgb(99, 8, 8), rgb(255, 137, 210));
+    background-image: linear-gradient(to right,  #dacc90c4,#cbcebe);
     /* Gradiente colorido */
     margin: 20px 0;
 }
@@ -133,13 +116,29 @@ hr::after {
     display: inline-block;
     font-size: 1.5em;
     margin: 0 10px;
-    /* Espaçamento ao redor do emoji */
 }
-/* .foto img:hover{
-    transform: scale(1.1);
-} */
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
 
 
+.links a {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.links img {
+    width: 50px; 
+    height: 50px;
+
+}
+.links a:hover {
+    transform: scale(1.1); 
+}
 
 @media screen and (min-width:768px) {
     nav .menu-mobile {

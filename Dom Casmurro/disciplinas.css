@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 
 * {
     margin: 0px;
@@ -46,6 +48,7 @@ h1 {
     object-fit: cover;
     margin-left: 15px;
     border-radius: 10%;
+    margin-top: 15px;
 }
 
 .foto p {
@@ -67,11 +70,12 @@ h1 {
     object-fit: cover;
     margin-left: 15px;
     border-radius: 10%;
+    margin-top: 15px;
 }
 
 
 .texto {
-    background-color:rgb(130, 165, 170);;
+    background-color:rgb(130, 165, 170);
     display: flex;
     flex-direction: column;
     width: 50vw;
@@ -115,11 +119,11 @@ hr {
 
 .linha {
     width: 5px;
-    height: 100vh;
+    height: 75vh;
     border: 0;
     width: 5px;
     /* Alterado de height para width para representar a largura da linha */
-    background-image: linear-gradient(to bottom, rgb(99, 8, 8), rgb(255, 137, 210));
+    background-image: linear-gradient(to bottom,  rgb(130, 139, 170),rgb(130, 165, 170));
     /* Gradiente colorido na direção vertical */
     margin: 20px;
     border-radius: 5px;
@@ -141,6 +145,9 @@ hr::after {
 p {
     margin-left: 10px;
     
+}
+.foto p{
+    font-family: 'Lobster Two', sans-serif;
 }
 
 @media screen and (min-width:768px) {
